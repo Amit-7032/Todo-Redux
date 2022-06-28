@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,700);
+
+.main-div{
+    color: #435757;
+    background: linear-gradient(-20deg, #d0b782 20%, #a0cecf 80%);
+    font: 500 1.2em/1.2 'Roboto', sans-serif;
+    display:flex;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+.child-div{
+    margin-top: 200px;
+}
+
+.heading{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(66, 66, 66);
+}
+
+/* .todo-container{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+} */
+
+.input-group{
+    width: 500px;
+    /* height: 50px; */
+}
+
+/* .show{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+} */
+
+#checked-item {
+    text-decoration: line-through;
+  }
