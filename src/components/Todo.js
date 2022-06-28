@@ -15,16 +15,6 @@ function Todo() {
   
      const handleCheck = (event) => {
 
-      //---------Abhishek------------//
-
-      // let checkid=document.getElementById('checkid');
-      // if(checkid.checked){
-      //   setChecked(true)
-      // }else{
-      //   setChecked(false)
-      // }
-
-      //-----------------------------//
           var updatedList = [...checked];
           if (event.target.checked) {
             updatedList = [...checked, event.target.value];
@@ -63,8 +53,6 @@ function Todo() {
 
               <div className="input-group mb-3" key={elem.id}>
                 <span className="input-group-text"><input value={elem.data} type="checkbox" onChange={handleCheck}/></span>
-                {/* <span className={isChecked(elem.data)}>{elem.data}</span> */}
-                {/* -------------Abhishek-------id={checked ? "checked-item" : "not-checked-item"}--------------- */}
                 <input type="text" className="form-control" id={isChecked(elem.data)} value={elem.data}/>
                 <span className="input-group-text"><MdDeleteForever onClick={()=>dispatch(deleteTodo(elem.id))} /></span>
               </div>
